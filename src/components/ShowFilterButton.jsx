@@ -5,7 +5,7 @@ import IconButton from '@material-ui/core/IconButton';
 
 export const ShowFilterButton = () => {
     return (
-        <IconButton aria-label="mostrar/ocultar">
+        <IconButton className="ShowFilterButton" aria-label="mostrar/ocultar">
             <RiFilterLine/>
         </IconButton>
     )

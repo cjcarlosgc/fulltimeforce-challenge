@@ -1,11 +1,11 @@
-import { Fragment, Component } from 'react'
+import { Component } from 'react'
 import '../assets/styles/pages/AllCommits.scss';
 
 import { Title } from '../components/Title';
 import { ShowFilterButton } from '../components/ShowFilterButton';
 import { DateFilterBar } from '../components/DateFilterBar';
 import { CommitTable } from '../components/CommitTable';
-
+import { Footer } from '../components/Footer';
 class AllCommits extends Component {
     state = {
         commits: []
@@ -13,14 +13,15 @@ class AllCommits extends Component {
 
     render(){
         return (
-            <Fragment>
-                <div className="AllCommits__header">
+            <div className="AllCommits">
+                <header>
                     <Title/>
                     <ShowFilterButton/>
-                </div>
+                </header>
                 <DateFilterBar/>
                 <CommitTable commits={this.state.commits}/>
-            </Fragment>
+                <Footer/>
+            </div>
         );
     }
 
