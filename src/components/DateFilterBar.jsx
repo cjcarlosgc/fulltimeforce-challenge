@@ -9,7 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 
 export const DateFilterBar = () => {
     const [selectedDate, setSelectedDate] = useState(
-        new Date('2014-08-18T21:11:54')
+        // new Date('2014-08-18T21:11:54')
     );
 
     const handleDateChange = (date) => {
@@ -23,7 +23,7 @@ export const DateFilterBar = () => {
                     <KeyboardDatePicker
                         margin="normal"
                         id="date-picker-dialog"
-                        label="Desde"
+                        placeholder="Desde"
                         format="dd/MM/yyyy"
                         value={selectedDate}
                         onChange={handleDateChange}
@@ -38,7 +38,7 @@ export const DateFilterBar = () => {
                     <KeyboardDatePicker
                         margin="normal"
                         id="date-picker-dialog"
-                        label="Desde"
+                        placeholder="Hasta"
                         format="dd/MM/yyyy"
                         value={selectedDate}
                         onChange={handleDateChange}
@@ -49,7 +49,7 @@ export const DateFilterBar = () => {
                 </MuiPickersUtilsProvider>
             </div>
             <div className="DateFilterBar__button">
-                <IconButton aria-label="delete">
+                <IconButton aria-label="clear">
                     <GrClose/>
                 </IconButton>
             </div>

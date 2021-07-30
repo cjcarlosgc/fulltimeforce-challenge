@@ -14,7 +14,6 @@ export const Commit = (props) => {
                             src={lastChangeGraph}
                         /> :
                         <img
-                            className='change-graph'
                             alt="change graphic"
                             src={changeGraph}
                         />

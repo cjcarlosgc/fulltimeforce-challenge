@@ -2,8 +2,8 @@ import '../assets/styles/components/Title.scss';
 
 export const Title = () => {
     return (
-        <section className="Title">
+        <h1 className="Title">
             Commits
-        </section>
+        </h1>
     )
 }
