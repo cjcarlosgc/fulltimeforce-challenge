@@ -8,7 +8,35 @@ import { CommitTable } from '../components/CommitTable';
 import { Footer } from '../components/Footer';
 class AllCommits extends Component {
     state = {
-        commits: []
+        commits: [],
+        fromDate: null,
+        toDate: null,
+        showFilterBar: false
+    }
+
+    handleClickShowFilterButton = () => {
+        this.setState({
+            showFilterBar: !this.state.showFilterBar
+        });
+    }
+
+    handleFromDate = (date) => {
+        this.setState({
+            fromDate: date
+        });
+    };
+
+    handleToDate = (date) => {
+        this.setState({
+            toDate: date
+        });
+    };
+
+    handleClickClearDates = () => {
+        this.setState({
+            fromDate: null,
+            toDate: null
+        })
     }
 
     render(){
@@ -16,10 +44,25 @@ class AllCommits extends Component {
             <div className="AllCommits">
                 <header>
                     <Title/>
-                    <ShowFilterButton/>
+                    <ShowFilterButton
+                        showFilterBar={this.state.showFilterBar}
+                        handleClickShowFilterButton={this.handleClickShowFilterButton}
+                    />
                 </header>
-                <DateFilterBar/>
-                <CommitTable commits={this.state.commits}/>
+                <DateFilterBar
+                    fromDate={this.state.fromDate}
+                    toDate={this.state.toDate}
+                    showFilterBar={this.state.showFilterBar}
+                    handleFromDate={this.handleFromDate}
+                    handleToDate={this.handleToDate}
+                    handleClickClearDates={this.handleClickClearDates}
+                />
+                <CommitTable
+                    commits={this.state.commits}
+                    showFilterBar={this.state.showFilterBar}
+                    fromDate={this.state.fromDate}
+                    toDate={this.state.toDate}
+                />
                 <Footer/>
             </div>
         );

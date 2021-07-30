@@ -23,11 +23,13 @@ export const Commit = (props) => {
                 <div className="Commit__content-message">
                     {props.commit.message}
                 </div>
-                <div className="Commit__content-hash">
-                    {props.sha?.substr(0,8)}
-                </div>
-                <div className="Commit__content-datetime">
-                    {`${utils.formatStringDate(props.commit.author.date)} a las ${utils.extractHourAndMinutes(props.commit.author.date)}`}
+                <div className="Commit__content-detail">
+                    <div className="Commit__content-detail-hash">
+                        {props.sha?.substr(0,8)}
+                    </div>
+                    <div className="Commit__content-detail-datetime">
+                        {`${utils.formatStringDate(props.commit.author.date)} a las ${utils.extractHourAndMinutes(props.commit.author.date)}`}
+                    </div>
                 </div>
             </div>
         </div>

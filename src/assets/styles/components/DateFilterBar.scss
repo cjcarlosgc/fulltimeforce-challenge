@@ -23,3 +23,22 @@
         margin-top: 5px;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .DateFilterBar{
+        justify-content: flex-end;
+        justify-items: flex-end;
+    }
+
+    .DateFilterBar__from{
+        width: initial;
+    }
+
+    .DateFilterBar__to{
+        width: initial;
+    }
+
+    .DateFilterBar__button{
+        width: initial;
+    }
+}

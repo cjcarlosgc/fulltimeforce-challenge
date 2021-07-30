@@ -4,6 +4,10 @@
     border-top: .5px solid rgb(202, 202, 202);
 }
 
+.Commit:hover{
+    background: #e6e6e6;
+}
+
 .Commit:last-child{
     border-bottom: none;
 }
@@ -13,8 +17,6 @@
     align-items: center;
     justify-content: center;
     min-width: 100px;
-    margin-bottom: -10px;
-    margin-top: -10px;
 }
 
 .Commit__content{
@@ -31,10 +33,29 @@
     margin-bottom: 5px;
 }
 
-.Commit__content-hash{
-    font-size: 1.1rem;
+.Commit__content-detail{
+    display: flex;
+    flex-direction: column;
 }
 
-.Commit__content-datetime{
+.Commit__content-detail-hash{
     font-size: 1.1rem;
+    color: #ec0000;
+    padding: 5px 0;
+}
+
+.Commit__content-detail-datetime{
+    font-size: 1.1rem;
+    padding: 5px 0;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .Commit__content-detail{
+        flex-direction: row;
+    }
+
+    .Commit__content-detail-hash{
+        margin-right: 10px;
+    }
 }

@@ -20,7 +20,7 @@ export const Footer = () => {
             </picture>
             <div className="copyright">
                 <span>
-                    Copyright © 2021 All rights reserved
+                    Copyright © 2021 Todos los derechos reservados
                 </span>
                 <ul className="social-media">
                     <li>
