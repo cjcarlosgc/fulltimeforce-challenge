@@ -1,0 +1,44 @@
+.Commit{
+    padding: 10px;
+    display: flex;
+    border-top: .5px solid rgb(202, 202, 202);
+}
+
+.Commit:last-child{
+    border-bottom: none;
+}
+
+.Commit__graph{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+
+    .change-graph{
+        // height: 90%;
+    }
+}
+
+.Commit__content{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.Commit__content-message{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.Commit__content-hash{
+    font-size: 1.1rem;
+}
+
+.Commit__content-datetime{
+    font-size: 1.1rem;
+}
