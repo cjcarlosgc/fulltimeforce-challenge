@@ -32,7 +32,7 @@ After all the node modules have been installed, we run the application with:
 
 __After a few seconds the browser will open and on port 3000 the application__
 
-![](https://lh6.googleusercontent.com/MChN3Jj7VuuhzV2dROrxFT8GxqEbI2IuGtk2OGfnE5_IjmQcql7b0SUfHKm7ii8f7M2Hn9FSwW1A1uBJfIfc=w1920-h942-rw)
+![](https://i.ibb.co/XZf411Q/Capture.png)
 
 
 ### End
