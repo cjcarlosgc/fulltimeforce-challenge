@@ -1,4 +1,3 @@
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import footerBackgroundImage from '../assets/images/footer-sm.png';
 import footerBackgroundImageLg from '../assets/images/footer-lg.png';
 
@@ -22,35 +21,6 @@ export const Footer = () => {
                 <span>
                     Copyright © 2021 Todos los derechos reservados
                 </span>
-                <ul className="social-media">
-                    <li>
-                        <a
-                            href="https://twitter.com/cjcarlosgc"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Twitter <FaTwitter/>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://github.com/cjcarlosgc"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            GitHub <FaGithub/>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.linkedin.com/in/jean-carlos-garcia-a82753217/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            LinkedIn <FaLinkedin/>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </footer>
     )
