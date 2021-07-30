@@ -2,6 +2,9 @@
 
 ![](https://fulltimeforce.com/wp-content/themes/ftf-2020/images/fulltimeforce-logo.svg)
 
+**Table of Contents**
+
+[TOCM]
 # Introduction
 
 This application is built with javascript as part of the challenge assigned to me by FulltimeForce. Some parts of the interface are built with React Material and it is an accessible and responsive design application.
